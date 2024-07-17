@@ -1,0 +1,460 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* background page settings */
+.main {
+    background: #000000;
+    color: #fff;
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+/* total navbar settings */
+.navbar {
+    width: 100%; /* Take full width of the viewport */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align to the top of the viewport */
+    background-color: #000000; /* Background color of the navbar */
+    z-index: 500; /* Ensure it's above other content */
+    padding: 9px 0; /* Padding for top and bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* h1 settings */
+.navbar h1 {
+    font-size: 36px; /* Adjust size as needed */
+    color: #fff; /* Text color */
+    margin-left: 25px; /* Space from the left edge */
+}
+
+/* list items settings */
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 30%;
+}
+
+/* list items link settings */
+ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: aqua;
+    margin-top: -3%;
+    transition: .2s ease;
+    border-radius: 40%;
+   box-shadow:  10px 2px 22px   #77d0f3;
+   position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom:-6px;
+    transition: 0.7s;
+
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+
+
+ul li a:hover{
+    color: rgb(239, 255, 15);
+    box-shadow:  0px 0px 0px   #ff0000;
+
+}
+
+ul li a:active{
+    box-shadow:  10px 2px 22px   #fffb14;
+    transform: translateY(10px);
+}
+
+.navbar h1{
+    font-size: 60px;
+
+}
+
+.navbar span{
+    color: #88ff00;  
+}
+
+.header-text p{
+    margin-top: -21%;
+    margin-left: 6%;
+    font-size: 47px;
+    font-weight: 775;
+}
+
+.header-text h1{
+    margin-top: 0%;
+    margin-left: 6%;
+    font-size: 47px;
+}
+
+
+.header-text span{
+    color: #ff0000;
+}
+
+
+/* Image settings */
+.mypic1 {
+    width: 330px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 65%;
+    margin-top: 13%;
+    border-radius: 50%;
+}
+
+
+
+
+/* ---------------------------------------    About    ----------------------------------------------------*/
+
+
+#about{
+    background: #000000;
+}
+
+
+/* about heading and also distance between pages also connected with image */
+.row{
+    display: flex;
+    margin-left: 10%;
+
+}
+
+/* image settings */
+.about-col-1 img{
+    margin-top: 40%;
+    width: 250px; /* Adjust width as needed */
+    height: 550px;
+    margin-left: -25%;
+    margin-bottom: 60%;
+    border-radius: 65px;
+
+}
+
+/* no use */
+.about-col-1{
+    box-flex-group: 35%;
+}
+
+.about-col-2{
+    margin-top: 10%;
+    box-flex-group: 60%;
+        color: #ffffff; 
+}
+
+/* about me color settings */
+.sub-title{
+    color: #ff0077;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff6912;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-contents ul li span{
+    color: #FFA500;
+    font-size: 14px;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents{
+    display: none;
+
+}
+
+.tab-contents.active-tab{
+    display: block;
+
+}
+
+
+/* ------------------------------------------   Skills    ---------------------------------------------- */
+
+#services{
+    padding: 25px 0;
+    background: #000000;
+}
+
+.sub-title{
+    margin-left: 10%;
+    
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 2%;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.services-list div{
+    background:  gray;
+    color: #ffffff;
+    padding: 40px ;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    box-shadow:  14px 20px 28px   #ffd900;
+    transition: background 0.5s , transform 0.5s;
+
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #aaa2a2;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.services-list div a{
+    text-decoration: none;
+   color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #6ce3e7;
+    transform: translateY(-20px);
+    box-shadow: none;
+}
+
+
+/* ===================================   My Work    ====================================== */
+
+#portfolio .container{    
+
+    background: #000000;
+}
+
+#portfolio .sub-title{
+    padding: 30px 0;
+}
+
+.work img{
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    width: 20%;
+    height: 30%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+   
+}
+
+.work img:hover{
+     transform: scale(1.1);
+     border:solid 2px rgb(252, 255, 59);
+}
+
+.work-list h1{
+    margin-left: 13%;
+    color: #ff0077;
+    
+}
+
+
+
+
+
+
+/* ----------------------------------------     Contact      ----------------------------------------- */
+.concontainer{
+    background: #000000;
+}
+.consub-title{
+    margin-top: 50%;
+    margin-left: -2px;
+    color: #f00673;
+}
+.contact-left{
+
+    flex-basis: 35%;
+}
+
+.contact-right{
+    margin-top: 17%;
+    flex-basis: 60%;
+    margin-bottom: 6%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.contact-left p i{
+    transition: transform 0.5s;
+}
+.contact-left p i{
+    color: #ffa600;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+ 
+#fields{
+    transition:transform 0.5s;
+}
+
+#fields:hover{
+    box-shadow: 4px 6px 8px #88ff00;
+    transform:translateY(-6px);
+}
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a #whatsapp{
+    
+    font-size: 30px;
+    margin-right: 15px;
+    color:#2bffdc;
+    display:inline-block;
+
+}
+
+.social-icons a #linkedin{
+    
+    font-size: 30px;
+    margin-right: 15px;
+    color:#0072b1;
+    display:inline-block;
+
+}
+
+.social-icons a #email{
+    
+    font-size: 30px;
+    margin-right: 15px;
+    color: #9b190f;
+    display:inline-block;
+
+}
+
+.social-icons a #instagram{
+    
+    font-size: 30px;
+    margin-right: 15px;
+    color:  #e919ab ;
+    display:inline-block;
+
+}
+
+
+.contact-right form{
+    width:100%;
+}
+form input , form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background:#262626;
+    padding:15px;
+    margin:15px 0;
+    color:#ffffff;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+form .btn{
+    background: #a5a5a5;
+    padding: 10px 42px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow:6px 5px 6px rgba(105, 105, 105, 0.555),
+                 inset 5px 5px 8px   #61615e,
+                inset -5px -5px 8px   #4e4d4d;
+}
+
+form .btn:active{
+    box-shadow:6px 5px 6px rgba(105, 105, 105, 0.555),
+    inset -5px -5px -8px   #61615e,
+   inset 5px 5px 8px   #4e4d4d;
+
+}
+
+.copy-right{
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    background: #0aa873;
+    font-weight: 300;
+
+}
+
+#href{
+    color:rgb(47, 0, 255);
+    text-decoration: none;
+    font-size: larger;  
+}
+#href:hover{
+    color:#ff8614
+}
+
+
+
